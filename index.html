@@ -1,83 +1,200 @@
 <!DOCTYPE html>
-<html>
-<style>
-    * {
-        box-sizing: border-box;
-    }
+<html lang="en">
+<head>
+    <title>Page Title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* Style the body */
+        h1, h2{
+            font-family: 'Amatica SC', cursive;
+            text-shadow: 1px 1px 1px red,
+            2px 2px 1px red;
+        }
 
-    body {
-        margin: 0;
-        font-family: Arial;
-    }
+        p{
+            /*****new layout****/
+            background-color: firebrick;
+            width: 90%;
+            height: 300px; /*300*/
+            margin-right: auto;
+            margin-left: auto;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            color: #ECEFF1;
+        }
+        body {
+            margin: 0;
+        }
+        *{
+            box-sizing: border-box;
 
-    .header {
-        text-align: center;
-        padding: 32px;
-    }
+        }
 
-    /* Create two equal columns that floats next to each other */
-    .column {
-        float: left;
-        width: 50%;
-        padding: 10px;
-    }
+        /* Simple Responsive Framework. */
+        .row {
+            width: 100%;
+        }
 
-    .column img {
-        margin-top: 12px;
-    }
+        /********** Large devices only **********/
+        @media (min-width: 1200px) {
+            .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+                float: left;
+                border: 1px firebrick;
+            }
+            .col-lg-1 {
+                width: 8.33%;
+            }
+            .col-lg-2 {
+                width: 16.66%;
+            }
+            .col-lg-3 {
+                width: 25%;
+            }
+            .col-lg-4 {
+                width: 33.33%;
+            }
+            .col-lg-5 {
+                width: 41.66%;
+            }
+            .col-lg-6 {
+                width: 50%;
+            }
+            .col-lg-7 {
+                width: 58.33%;
+            }
+            .col-lg-8 {
+                width: 66.66%;
+            }
+            .col-lg-9 {
+                width: 74.99%;
+            }
+            .col-lg-10 {
+                width: 83.33%;
+            }
+            .col-lg-11 {
+                width: 91.66%;
+            }
+            .col-lg-12 {
+                width: 100%;
+            }
+        }
 
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-</style>
+        /********** Medium devices only **********/
+        @media (min-width: 992px) and (max-width: 1199px) {
+            .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+                float: left;
+                border: 1px solid green;
+            }
+            .col-md-1 {
+                width: 8.33%;
+            }
+            .col-md-2 {
+                width: 16.66%;
+            }
+            .col-md-3 {
+                width: 25%;
+            }
+            .col-md-4 {
+                width: 33.33%;
+            }
+            .col-md-5 {
+                width: 41.66%;
+            }
+            .col-md-6 {
+                width: 50%;
+            }
+            .col-md-7 {
+                width: 58.33%;
+            }
+            .col-md-8 {
+                width: 66.66%;
+            }
+            .col-md-9 {
+                width: 74.99%;
+            }
+            .col-md-10 {
+                width: 83.33%;
+            }
+            .col-md-11 {
+                width: 91.66%;
+            }
+            .col-md-12 {
+                width: 100%;
+            }
+        }
+        #hero-area img {
+            margin-bottom: 0;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+</head>
 <body>
-
-<!-- Header -->
-<div class="header">
-    <h1>Image Grid</h1>
-</div>
-
-<!-- Photo Grid -->
+<div style = "background-color: bisque">
+<h1 style="text-align: center">Menu</h1>
 <div class="row">
-    <div class="column">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/falls2.jpg" style="width:100%">
-        <img src="/w3images/paris.jpg" style="width:100%">
-        <img src="/w3images/nature.jpg" style="width:100%">
-        <img src="/w3images/mist.jpg" style="width:100%">
-        <img src="/w3images/paris.jpg" style="width:100%">
+    <div class="col-lg-3 col-md-6">
+        <h2 style="text-align: right">Pizza Marinara</h2>
+        <p style="text-align: center">
+            <img src="https://img.delicious.com.au/VKKwMstw/w1200/del/2019/03/marinara-pizza-102752-2.jpg" style="width:70%;" >
+            "Pomodoro, origano"
+        </p>
     </div>
-    <div class="column">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/ocean.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/mountainskies.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/underwater.jpg" style="width:100%">
+    <div class="col-lg-3 col-md-6">
+        <h2 style="text-align: right">Pizza Margerita</h2>
+        <p style="text-align: center">
+            <img src="https://lh3.googleusercontent.com/proxy/-3ooy-TF8ZY1TF52P-3hHWvHK-Mauwv0RtiksWNIYM0xXkojQHD7IMHuNH0HfiRj8A4hWJDYVmjOAV9xFJ-4B4aBXfPr2mMjevRk2uTJwZAJerciQ3Z0tT8J0VCUv5XsjU-Th_lGKhEg"  style="width:70%;" >
+            "Pomodoro, mozzarella, origano"
+        </p>
     </div>
-    <div class="column">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/falls2.jpg" style="width:100%">
-        <img src="/w3images/paris.jpg" style="width:100%">
-        <img src="/w3images/nature.jpg" style="width:100%">
-        <img src="/w3images/mist.jpg" style="width:100%">
-        <img src="/w3images/paris.jpg" style="width:100%">
+    <div class="col-lg-3 col-md-6">
+        <h2 style="text-align: right">Pizza Greca</h2>
+        <p style="text-align: center">
+            <img src="https://i.imgur.com/Nw7cfBK.jpg"  style="width:70%;">
+            "Pomodoro, mozzarella, grana, pate d`oliva"
+        </p>
     </div>
-    <div class="column">
-        <img src="/w3images/underwater.jpg" style="width:100%">
-        <img src="/w3images/ocean.jpg" style="width:100%">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/mountainskies.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/underwater.jpg" style="width:100%">
+    <div class="col-lg-3 col-md-6">
+        <h2 style="text-align: right">Pizza Diavola</h2>
+        <p style="text-align: center">
+            <img  src="https://i1.wp.com/www.piccolericette.net/piccolericette/wp-content/uploads/2017/06/3236_Pizza.jpg?resize=895%2C616&amp;ssl=1"  style="width:70%;">
+            "Pomodoro, mozzarella, salame picante"
+        </p>
     </div>
+    <div class="col-lg-3 col-md-6">
+        <h2 style="text-align: right">Pizza Napoletana</h2>
+        <p style="text-align: center">
+            <img src="https://www.tavolartegusto.it/wp/wp-content/uploads/2020/05/Pizza-napoletana-Ricetta-della-Pizza-Napoletana-Pizza-Margherita-1280x720.jpg" style="width:70%;">
+            "Pomodoro, mozzarella, grana, melanzane"
+        </p>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <h2 style="text-align: right">Pizza Prosciutto</h2>
+        <p style="text-align: center">
+            <img  src="https://www.italiadiscovery.it/uploads/ricette/2015/05/pizza-prosciutto-e-wurstel-1024x683.jpg" style="width:70%;">
+            "Pomodoro, mozzarella, prosciutto cotto"
+        </p>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <h2 style="text-align: right">Pizza Pancetta e Rucola</h2>
+        <p style="text-align: center">
+            <img src="https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/04/r2.jpg" style="width:70%;">
+            "Pomodoro, mozzarella, rucole, pomodorini"
+        </p>
+    </div>
+    <div class="col-lg-3 col-md-6">
+        <h2 style="text-align: right">Pizza Pugliese</h2>
+        <p style="text-align: center">
+            <img src="https://static.cookist.it/wp-content/uploads/sites/21/2020/03/Focaccia-pugliese-638x425.jpg" style="width:70%;">
+            "Pomodoro, mozzarella, cipolle, pomodorini freschi, pancetta"
+        </p>
+    </div>
+</div>>
 </div>
 
 </body>
 </html>
-
