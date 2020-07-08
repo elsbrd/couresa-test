@@ -1,200 +1,253 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Page Title</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        /* Style the body */
-        h1, h2{
-            font-family: 'Amatica SC', cursive;
-            text-shadow: 1px 1px 1px red,
-            2px 2px 1px red;
-        }
+<!doctype html>
 
-        p{
-            /*****new layout****/
-            background-color: firebrick;
-            width: 90%;
-            height: 300px; /*300*/
-            margin-right: auto;
-            margin-left: auto;
-            font-family: "Comic Sans MS", cursive, sans-serif;
-            color: #ECEFF1;
-        }
-        body {
-            margin: 0;
-        }
-        *{
-            box-sizing: border-box;
-
-        }
-
-        /* Simple Responsive Framework. */
-        .row {
-            width: 100%;
-        }
-
-        /********** Large devices only **********/
-        @media (min-width: 1200px) {
-            .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-                float: left;
-                border: 1px firebrick;
-            }
-            .col-lg-1 {
-                width: 8.33%;
-            }
-            .col-lg-2 {
-                width: 16.66%;
-            }
-            .col-lg-3 {
-                width: 25%;
-            }
-            .col-lg-4 {
-                width: 33.33%;
-            }
-            .col-lg-5 {
-                width: 41.66%;
-            }
-            .col-lg-6 {
-                width: 50%;
-            }
-            .col-lg-7 {
-                width: 58.33%;
-            }
-            .col-lg-8 {
-                width: 66.66%;
-            }
-            .col-lg-9 {
-                width: 74.99%;
-            }
-            .col-lg-10 {
-                width: 83.33%;
-            }
-            .col-lg-11 {
-                width: 91.66%;
-            }
-            .col-lg-12 {
-                width: 100%;
-            }
-        }
-
-        /********** Medium devices only **********/
-        @media (min-width: 992px) and (max-width: 1199px) {
-            .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-                float: left;
-                border: 1px solid green;
-            }
-            .col-md-1 {
-                width: 8.33%;
-            }
-            .col-md-2 {
-                width: 16.66%;
-            }
-            .col-md-3 {
-                width: 25%;
-            }
-            .col-md-4 {
-                width: 33.33%;
-            }
-            .col-md-5 {
-                width: 41.66%;
-            }
-            .col-md-6 {
-                width: 50%;
-            }
-            .col-md-7 {
-                width: 58.33%;
-            }
-            .col-md-8 {
-                width: 66.66%;
-            }
-            .col-md-9 {
-                width: 74.99%;
-            }
-            .col-md-10 {
-                width: 83.33%;
-            }
-            .col-md-11 {
-                width: 91.66%;
-            }
-            .col-md-12 {
-                width: 100%;
-            }
-        }
-        #hero-area img {
-            margin-bottom: 0;
-        }
-        img {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-    </style>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elisa's Pizza</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div style = "background-color: bisque">
-<h1 style="text-align: center">Menu</h1>
-<div class="row">
-    <div class="col-lg-3 col-md-6">
-        <h2 style="text-align: right">Pizza Marinara</h2>
-        <p style="text-align: center">
-            <img src="https://img.delicious.com.au/VKKwMstw/w1200/del/2019/03/marinara-pizza-102752-2.jpg" style="width:70%;" >
-            "Pomodoro, origano"
-        </p>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <h2 style="text-align: right">Pizza Margerita</h2>
-        <p style="text-align: center">
-            <img src="https://lh3.googleusercontent.com/proxy/-3ooy-TF8ZY1TF52P-3hHWvHK-Mauwv0RtiksWNIYM0xXkojQHD7IMHuNH0HfiRj8A4hWJDYVmjOAV9xFJ-4B4aBXfPr2mMjevRk2uTJwZAJerciQ3Z0tT8J0VCUv5XsjU-Th_lGKhEg"  style="width:70%;" >
-            "Pomodoro, mozzarella, origano"
-        </p>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <h2 style="text-align: right">Pizza Greca</h2>
-        <p style="text-align: center">
-            <img src="https://i.imgur.com/Nw7cfBK.jpg"  style="width:70%;">
-            "Pomodoro, mozzarella, grana, pate d`oliva"
-        </p>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <h2 style="text-align: right">Pizza Diavola</h2>
-        <p style="text-align: center">
-            <img  src="https://i1.wp.com/www.piccolericette.net/piccolericette/wp-content/uploads/2017/06/3236_Pizza.jpg?resize=895%2C616&amp;ssl=1"  style="width:70%;">
-            "Pomodoro, mozzarella, salame picante"
-        </p>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <h2 style="text-align: right">Pizza Napoletana</h2>
-        <p style="text-align: center">
-            <img src="https://www.tavolartegusto.it/wp/wp-content/uploads/2020/05/Pizza-napoletana-Ricetta-della-Pizza-Napoletana-Pizza-Margherita-1280x720.jpg" style="width:70%;">
-            "Pomodoro, mozzarella, grana, melanzane"
-        </p>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <h2 style="text-align: right">Pizza Prosciutto</h2>
-        <p style="text-align: center">
-            <img  src="https://www.italiadiscovery.it/uploads/ricette/2015/05/pizza-prosciutto-e-wurstel-1024x683.jpg" style="width:70%;">
-            "Pomodoro, mozzarella, prosciutto cotto"
-        </p>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <h2 style="text-align: right">Pizza Pancetta e Rucola</h2>
-        <p style="text-align: center">
-            <img src="https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/04/r2.jpg" style="width:70%;">
-            "Pomodoro, mozzarella, rucole, pomodorini"
-        </p>
-    </div>
-    <div class="col-lg-3 col-md-6">
-        <h2 style="text-align: right">Pizza Pugliese</h2>
-        <p style="text-align: center">
-            <img src="https://static.cookist.it/wp-content/uploads/sites/21/2020/03/Focaccia-pugliese-638x425.jpg" style="width:70%;">
-            "Pomodoro, mozzarella, cipolle, pomodorini freschi, pancetta"
-        </p>
-    </div>
-</div>>
-</div>
+<header>
+  <nav id="header-nav" class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="index.html" class="pull-left visible-md visible-lg">
+          <div id="logo-img"></div>
+        </a>
 
-</body>
-</html>
+        <div class="navbar-brand">
+          <a href="index.html"><h1>Elisa's Pizza</h1></a>
+          <p>
+            <img src="images/star-k-logo.png" alt="Kosher certification">
+            <span>WORLDCHEFS GLOBAL Certified</span>
+          </p>
+        </div>
+
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div id="collapsable-nav" class="collapse navbar-collapse">
+        <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <li class="active">
+            <a href="menu-categories.html">
+              <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
+          </li>
+          <li id="phone" class="hidden-xs">
+            <a href="tel:410-602-5008">
+              <span>066-552-87-32</span></a><div>* We Deliver</div>
+          </li>
+        </ul><!-- #nav-list -->
+      </div><!-- .collapse .navbar-collapse -->
+    </div><!-- .container -->
+  </nav><!-- #header-nav -->
+</header>
+
+<div id="call-btn" class="visible-xs">
+  <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+  </a>
+</div>
+<div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+<div id="main-content" class="container">
+  <h2 id="menu-categories-title" class="text-center">Lunch Menu</h2>
+  <div class="text-center">Lunch is not served until from 12pm until 2pm.</div>
+
+  <section class="row">
+    <div class="menu-item-tile col-md-6">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="menu-item-photo">
+            <div>D01</div>
+            <img class="img-responsive" width="250" height="150" src="https://img.delicious.com.au/VKKwMstw/w1200/del/2019/03/marinara-pizza-102752-2.jpg" alt="Item">
+          </div>
+          <div class="menu-item-price">$3.50<span> (pint)</span></div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">Pizza Marinara</h3>
+          <p class="menu-item-details">"Pomodoro, origano"</p>
+        </div>
+      </div>
+      <hr class="visible-xs">
+    </div>
+
+    <div class="menu-item-tile col-md-6">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="menu-item-photo">
+            <div>D02</div>
+            <img class="img-responsive" width="250" height="150" src="https://www.tavolartegusto.it/wp/wp-content/uploads/2020/05/Pizza-napoletana-Ricetta-della-Pizza-Napoletana-Pizza-Margherita-1280x720.jpg" alt="Item">
+          </div>
+          <div class="menu-item-price">$4.50<span> (pint)</span> </div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">Pizza Margerita</h3>
+          <p class="menu-item-details">"Pomodoro, mozzarella, origano"</p>
+        </div>
+      </div>
+      <hr class="visible-xs">
+    </div>
+    <!-- Add after every 2nd menu-item-tile -->
+    <div class="clearfix visible-lg-block visible-md-block"></div>
+
+    <div class="menu-item-tile col-md-6">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="menu-item-photo">
+            <div>D03</div>
+            <img class="img-responsive" width="250" height="150" src="https://i.imgur.com/Nw7cfBK.jpg" alt="Item">
+          </div>
+          <div class="menu-item-price">$5.00<span> (pint)</span> </div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">Pizza Greca</h3>
+          <p class="menu-item-details">"Pomodoro, mozzarella, grana, pate d`oliva"</p>
+        </div>
+      </div>
+      <hr class="visible-xs">
+    </div>
+
+    <div class="menu-item-tile col-md-6">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="menu-item-photo">
+            <div>D04</div>
+            <img class="img-responsive" width="250" height="150" src="https://i1.wp.com/www.piccolericette.net/piccolericette/wp-content/uploads/2017/06/3236_Pizza.jpg?resize=895%2C616&amp;ssl=1" alt="Item">
+          </div>
+          <div class="menu-item-price">$5.50<span> (pint)</span></div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">Pizza Diavola</h3>
+          <p class="menu-item-details">"Pomodoro, mozzarella, salame picante"</p>
+        </div>
+      </div>
+      <hr class="visible-xs">
+    </div>
+    <!-- Add after every 2nd menu-item-tile -->
+    <div class="clearfix visible-lg-block visible-md-block"></div>
+
+    <div class="menu-item-tile col-md-6">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="menu-item-photo">
+            <div>D05</div>
+            <img class="img-responsive" width="250" height="150" src="https://www.tavolartegusto.it/wp/wp-content/uploads/2020/05/Pizza-napoletana-Ricetta-della-Pizza-Napoletana-Pizza-Margherita-1280x720.jpg" alt="Item">
+          </div>
+          <div class="menu-item-price">$5.50<span> (pint)</span></div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">Pizza Napoletana</h3>
+          <p class="menu-item-details">"Pomodoro, mozzarella, grana, melanzane"</p>
+        </div>
+      </div>
+      <hr class="visible-xs">
+    </div>
+
+    <div class="menu-item-tile col-md-6">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="menu-item-photo">
+            <div>D06</div>
+            <img class="img-responsive" width="250" height="150" src="https://www.italiadiscovery.it/uploads/ricette/2015/05/pizza-prosciutto-e-wurstel-1024x683.jpg" alt="Item">
+          </div>
+          <div class="menu-item-price">$5.90<span> (pint)</span></div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">Pizza Prosciutto</h3>
+          <p class="menu-item-details">"Pomodoro, mozzarella, prosciutto cotto"</p>
+        </div>
+      </div>
+      <hr class="visible-xs">
+    </div>
+    <div class="menu-item-tile col-md-6">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="menu-item-photo">
+            <div>D06</div>
+            <img class="img-responsive" width="250" height="150" src="https://www.silviocicchi.com/pizzachef/wp-content/uploads/2015/04/r2.jpg" alt="Item">
+          </div>
+          <div class="menu-item-price">$6.50<span> (pint)</span></div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">Pizza Pancetta e Rucola</h3>
+          <p class="menu-item-details">"Pomodoro, mozzarella, rucole, pomodorini"</p>
+        </div>
+      </div>
+      <hr class="visible-xs">
+    </div>
+
+    <div class="menu-item-tile col-md-6">
+      <div class="row">
+        <div class="col-sm-5">
+          <div class="menu-item-photo">
+            <div>D06</div>
+            <img class="img-responsive" width="250" height="150" src="https://static.cookist.it/wp-content/uploads/sites/21/2020/03/Focaccia-pugliese-638x425.jpg" alt="Item">
+          </div>
+          <div class="menu-item-price">$8.00<span> (pint)</span> </div>
+        </div>
+        <div class="menu-item-description col-sm-7">
+          <h3 class="menu-item-title">Pizza Pugliese</h3>
+          <p class="menu-item-details">"Pomodoro, mozzarella, cipolle, pomodorini freschi, pancetta"</p>
+        </div>
+      </div>
+      <hr class="visible-xs">
+    </div>
+    <!-- Add after every 2nd menu-item-tile -->
+    <div class="clearfix visible-lg-block visible-md-block"></div>
+
+  </section>
+
+</div><!-- End of #main-content -->
+
+<!--  <footer class="panel-footer">-->
+<!--    <div class="container">-->
+<!--      <div class="row">-->
+<!--        <section id="hours" class="col-sm-4">-->
+<!--          <span>Hours:</span><br>-->
+<!--          Sun-Thurs: 11:15am - 10:00pm<br>-->
+<!--          Fri: 11:15am - 2:30pm<br>-->
+<!--          Saturday Closed-->
+<!--          <hr class="visible-xs">-->
+<!--        </section>-->
+<!--        <section id="address" class="col-sm-4">-->
+<!--          <span>Address:</span><br>-->
+<!--          7105 Reisterstown Road<br>-->
+<!--          Baltimore, MD 21215-->
+<!--          <p>* Delivery area within 3-4 miles, with minimum order of $20 plus $3 charge for all deliveries.</p>-->
+<!--          <hr class="visible-xs">-->
+<!--        </section>-->
+<!--        <section id="testimonials" class="col-sm-4">-->
+<!--          <p>"The best Chinese restaurant I've been to! And that's saying a lot, since I've been to many!"</p>-->
+<!--          <p>"Amazing food! Great service! Couldn't ask for more! I'll be back again and again!"</p>-->
+<!--        </section>-->
+<!--      </div>-->
+<!--      <div class="text-center">&copy; Copyright David Chu's China Bistro 2016</div>-->
+<!--    </div>-->
+<!--  </footer>-->
+
+<!-- jQuery (Bootstrap JS plugins depend on it) -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+
+</body></html>
+
